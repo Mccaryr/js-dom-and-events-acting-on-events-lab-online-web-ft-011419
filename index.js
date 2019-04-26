@@ -12,10 +12,8 @@ function retrieveEmployeeInformation(){
 }
 
 function addNewElementAsLi(){
-  const list = document.querySelector("ul")
-    const newList = document.createElement("li")
-
-     newList.innerHTML = retrieveEmployeeInformation()
-
-     list.appendChild(newList)
+  const unorderedList = document.querySelector('ul')
+  const list = document.createElement('li')
+  list.innerHTML = retrieveEmployeeInformation()
+  list.appendChild(unorderedList);
 }
