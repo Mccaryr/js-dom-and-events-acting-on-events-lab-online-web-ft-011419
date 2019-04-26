@@ -10,3 +10,9 @@ function retrieveEmployeeInformation(){
   const employeeInfo = document.querySelector('input').value
   return employeeInfo
 }
+
+function addNewElementAsLi(){
+  const list = document.createElement('li');
+  list.innerHTML = retrieveEmployeeInformation()
+  list.appendChild('ul');
+}
