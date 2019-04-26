@@ -18,3 +18,8 @@ function addNewElementAsLi(){
   list.innerHTML = retrieveEmployeeInformation()
   unorderedList.appendChild(list);
 }
+
+function addNewLiOnClick(){
+  const newLi = document.createElement('li')
+
+}
