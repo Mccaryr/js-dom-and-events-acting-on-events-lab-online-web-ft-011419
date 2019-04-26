@@ -28,7 +28,7 @@ function addNewLiOnClick(){
 }
 
 function clearEmployeeListOnLinkClick(){
-  clear = document.querySelector('a="Clear Employee List"')
+  clear = document.querySelector('a')
   list = document.querySelector('#employee-list')
   clear.addEventListener("click", function(event){
     list.innerHTML = ""
