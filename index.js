@@ -20,6 +20,10 @@ function addNewElementAsLi(){
 }
 
 function addNewLiOnClick(){
-  const newLi = document.createElement('li')
+  const submit = document.querySelector('input[type="submit"]')
+  submit.addEventListener('click', function(event){
+    addNewElementAsLi()
+
+  })
 
 }
