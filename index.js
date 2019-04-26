@@ -25,5 +25,12 @@ function addNewLiOnClick(){
     addNewElementAsLi()
     document.querySelector('input').value = ""
   })
+}
 
+function clearEmployeeListOnLinkClick(){
+  clear = document.querySelector('a="Clear Employee List"')
+  list = document.querySelector('#employee-list')
+  clear.addEventListener("click", function(event){
+    list.innerHTML = ""
+  })
 }
